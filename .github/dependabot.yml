@@ -2,13 +2,16 @@ version: 2
 updates:
   - package-ecosystem: npm
     directory: /
+    open-pull-requests-limit: 2
     schedule:
       interval: monthly
   - package-ecosystem: pip
     directory: /services/kryptotron
+    open-pull-requests-limit: 2
     schedule:
       interval: monthly
   - package-ecosystem: github-actions
     directory: /
+    open-pull-requests-limit: 2
     schedule:
       interval: monthly
